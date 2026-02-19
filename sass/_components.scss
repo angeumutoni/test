@@ -1,0 +1,99 @@
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: $color-focus;
+  color: #111;
+  padding: $space-3 $space-4;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: $space-3;
+  top: $space-3;
+}
+
+.hero {
+  padding-block: $space-8;
+}
+
+.hero h1 {
+  font-size: clamp($fs-600, 5vw, $fs-700);
+  margin-bottom: $space-4;
+}
+
+.tag {
+  display: inline-block;
+  background: $color-surface-alt;
+  border: 1px solid $color-border;
+  border-radius: 999px;
+  padding: $space-1 $space-3;
+  font-size: $fs-100;
+  margin-bottom: $space-2;
+}
+
+.media-card {
+  container-type: inline-size;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  display: grid;
+}
+
+.media-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.media-card__body {
+  padding: $space-4;
+  display: grid;
+  gap: $space-3;
+}
+
+@container (max-width: 24rem) {
+  .media-card__body {
+    grid-template-columns: 1fr;
+  }
+
+  .media-card h3 {
+    font-size: $fs-300;
+  }
+}
+
+@container (min-width: 24.01rem) {
+  .media-card__body {
+    grid-template-columns: 1fr auto;
+    align-items: end;
+  }
+}
+
+.btn,
+.btn:visited {
+  display: inline-block;
+  background: $color-accent;
+  color: #fff;
+  text-decoration: none;
+  padding: $space-2 $space-4;
+  border-radius: $radius-sm;
+  font-weight: 600;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: $color-accent-dark;
+}
+
+.story-article {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  padding: $space-6;
+}
+
+.transcript {
+  border-left: 4px solid $color-success;
+  padding-left: $space-4;
+}

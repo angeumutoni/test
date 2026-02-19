@@ -1,0 +1,5 @@
+Story: Train Window
+
+[00:00] Train doors close.
+[00:08] Narrator: Between stations, memories run express.
+[00:19] Passenger: I count bridges to remember where I began.
