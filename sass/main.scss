@@ -1,0 +1,59 @@
+@use "colors" as *;
+@use "typography" as *;
+@use "spacing" as *;
+@use "layout";
+@use "components";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-sans;
+  font-size: $fs-200;
+  line-height: 1.6;
+  color: $color-text;
+  background: $color-bg;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: $fs-600;
+}
+
+p,
+li {
+  color: $color-muted;
+  max-width: 70ch;
+}
+
+a {
+  color: $color-accent;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid $color-focus;
+  outline-offset: 2px;
+}
+
+.section {
+  padding-block: $space-7;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: $fs-100;
+  color: $color-muted;
+}
